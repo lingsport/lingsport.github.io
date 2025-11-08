@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>博客搭建心得</title>
+    <link href="/2025/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/"/>
+    <url>/2025/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%BF%83%E5%BE%97/</url>
+    
+    <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>大一军训期间，也就是2025年的9月11号左右，我开始了建立自己博客网站的实践。在此之前，我对相关知识可以说是一无所知。非常感谢25网工网安交流群中的学长们，不仅提供了教程链接，而且还耐心解答我的各种问题。本篇我将把自己的建站过程进行梳理，对于难以解决的问题提供解决方案，希望可以帮到同样想要建站或建站过程中遇到和我相同问题的伙伴。</p><h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h2 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>我们平时在浏览器中看到的网页都是由html这种超文本标记语言编写的，而Hexo可以理解为为我们搭建了一个可以拿过来就用的框架，并将我们用<a href="https://www.runoob.com/markdown/md-tutorial.html">Markdown</a>（Markdown语言可点击链接在菜鸟教程中自行学习）这种轻量化的，简单的标记语言写成的文章渲染为html代码，呈现为网页填充在已经为我们准备好的框架里。</p></blockquote><h2 id="1-前置准备"><a href="#1-前置准备" class="headerlink" title="1.前置准备"></a>1.前置准备</h2><p>Hexo需要配置<a href="https://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn">Nodejs</a>环境（建议安装最新版本,，注意勾选Add to PATH等类似选项，这样可以免去自行配置环境变量等麻烦）</p><ul><li><a href="https://blog.csdn.net/qq_59509843/article/details/139632151">git安装教程</a></li><li><a href="https://blog.csdn.net/Nicolecocol/article/details/136788200">nodejs安装教程</a></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何更改fluid主题</title>
     <link href="/2025/11/07/%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A2%98/"/>
     <url>/2025/11/07/%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A2%98/</url>
