@@ -8,7 +8,7 @@ document
 
   .querySelector("#banner")
 
-  .setAttribute('style', 'background-image: url()')
+  .setAttribute('style', 'background-image: url(/img/theme picture/1.png)')
 
 document
 
