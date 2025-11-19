@@ -19,15 +19,15 @@
   <meta name="author" content="sport lin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="常量常量分别有：浮点型常量，字符型常量，字符串常量，符号常量。其中：  字符型常量是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。 字符串常量是以一对双撇号“ “” ”括起来的字符常量，能括起多个字符。 符号常量是指用一个标识符来代替的常量，在使用前需要提前定义，定义格式如下：  1234#define [常量标识符] [字符序列]如：#define PI 3.14159  &#x2F;&#x2F;定义">
+    <meta name="description" content="常量常量分别有：浮点型常量，字符型常量，字符串常量，符号常量。其中：  字符型常量是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。其中有一种特殊的字符型常量——转义字符，其以反斜杠&quot;\&quot;开头，将其后面的字符转变过程另外的含义。 字符串常量是以一对双撇号“ “” ”括起来的字符常量，能括起多个字符。 符号常量是指用一个标识符来代替的常量，在使用前需要提前定义，定义格">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c语言编程基础">
 <meta property="og:url" content="https://linsport.github.io/2025/11/16/c%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/c%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="常量常量分别有：浮点型常量，字符型常量，字符串常量，符号常量。其中：  字符型常量是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。 字符串常量是以一对双撇号“ “” ”括起来的字符常量，能括起多个字符。 符号常量是指用一个标识符来代替的常量，在使用前需要提前定义，定义格式如下：  1234#define [常量标识符] [字符序列]如：#define PI 3.14159  &#x2F;&#x2F;定义">
+<meta property="og:description" content="常量常量分别有：浮点型常量，字符型常量，字符串常量，符号常量。其中：  字符型常量是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。其中有一种特殊的字符型常量——转义字符，其以反斜杠&quot;\&quot;开头，将其后面的字符转变过程另外的含义。 字符串常量是以一对双撇号“ “” ”括起来的字符常量，能括起多个字符。 符号常量是指用一个标识符来代替的常量，在使用前需要提前定义，定义格">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-16T12:46:01.366Z">
-<meta property="article:modified_time" content="2025-11-17T16:19:19.157Z">
+<meta property="article:modified_time" content="2025-11-19T06:29:37.751Z">
 <meta property="article:author" content="sport lin">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.8k 字
+          2.5k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          16 分钟
+          22 分钟
         
       </span>
     
@@ -282,11 +282,11 @@
                 
                 <h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><p>常量分别有：<code>浮点型常量，字符型常量，字符串常量，符号常量</code>。<br>其中：</p>
 <ul>
-<li><code>字符型常量</code>是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。</li>
+<li><code>字符型常量</code>是以一对单撇号“ ‘’ ”括起来的字符常量，只能包含一个字节。其中有一种特殊的字符型常量——<strong>转义字符</strong>，其以反斜杠<code>&quot;\&quot;</code>开头，将其后面的字符转变过程另外的含义。</li>
 <li><code>字符串常量</code>是以一对双撇号“ “” ”括起来的字符常量，能括起多个字符。</li>
 <li><code>符号常量</code>是指用一个标识符来代替的常量，在使用前需要提前定义，定义格式如下：</li>
 </ul>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs txt">#define [常量标识符] [字符序列]<br>如：<br>#define PI 3.14159  //定义一个圆周率常数Π的值为3.14159<br>#define E 2.7828  //定义一个自然常数e的值为2.71828<br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">define</span> [常量标识符] [字符序列]</span><br>如：<br><span class="hljs-meta">#<span class="hljs-keyword">define</span> PI 3.14159  <span class="hljs-comment">//定义一个圆周率常数Π的值为3.14159</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> E 2.7828  <span class="hljs-comment">//定义一个自然常数e的值为2.71828</span></span><br></code></pre></td></tr></table></figure>
 <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>变量是指在程序执行过程中可以被改变的量。变量具有三要素变量类型、变量名和变量值。其中，</p>
 <ul>
 <li>变量类型决定编译时为其分配的存储单元大小（字节数）和运算方式；</li>
@@ -294,7 +294,7 @@
 <li>变量值即该存储单元中的内容。</li>
 </ul>
 <p>在c语言中，<strong>变量</strong>必须先<strong>定义</strong>再<strong>使用</strong>。变量定义的语法如下</p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs txt">[存储类别] 数据类型 变量名列表<br>如：<br>int x;  //定义1个整型变量x<br>float s,r;  //定义2个单精度浮点型变量s和r<br>char c;  //定义1个字符型变量c<br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c">[存储类别] 数据类型 变量名列表<br>如：<br><span class="hljs-type">int</span> x;  <span class="hljs-comment">//定义1个整型变量x</span><br><span class="hljs-type">float</span> s,r;  <span class="hljs-comment">//定义2个单精度浮点型变量s和r</span><br><span class="hljs-type">char</span> c;  <span class="hljs-comment">//定义1个字符型变量c</span><br></code></pre></td></tr></table></figure>
 <p><mark>注意：定义变量后，需要给变量赋值，若为给其赋值，则其值是不确定的，随机的。且给变量赋值时不能采用连等的形式。</mark></p>
 <h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p>运算符是一种告诉编译器执行特定的数学或逻辑操作的符号.</p>
 <h2 id="1-算术运算符"><a href="#1-算术运算符" class="headerlink" title="1.算术运算符"></a>1.算术运算符</h2><p>C语言提供了 6 个算术运算符，包括加、减、乘、除、取余和自增、自减。这些运算符常常用于数学计算，可以对数字进行加减乘除运算，以及获取数字的余数。</p>
@@ -374,6 +374,79 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>	<span class="hljs-type">int</span> a,b,c;<br>	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a);<br>	c=a&lt;&lt;<span class="hljs-number">16</span>;<br>	b=c&gt;&gt;<span class="hljs-number">24</span>;<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,b);<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>这段代码的功能就是利用了位算符来，其功能能是输入一个正整数（占4个字节），输出右边第2字节的值。如输入：255，则输出：0；输入：256，输出：1；输入：16666，输出：65。<br>那么为什么会达到这样的效果？<br>因为：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs txt">输入255<br>255的二进制：00000000 00000000 00000000 11111111<br>左移16位： 00000000 11111111 00000000 00000000<br>右移24位（算术右移）：由于左移16位后是正数，所以右移24位补0，得到00000000 00000000 00000000 00000000，即0。<br>输入256<br>256的二进制：00000000 00000000 00000001 00000000<br>左移16位： 00000001 00000000 00000000 00000000<br>右移24位： 00000000 00000000 00000000 00000001，即1。<br>输入16666<br>16666的二进制：00000000 00000000 01000001 00011010<br>左移16位： 01000001 00011010 00000000 00000000<br>右移24位： 00000000 00000000 00000000 01000001，即65<br></code></pre></td></tr></table></figure>
+
+<h1 id="c语句"><a href="#c语句" class="headerlink" title="c语句"></a>c语句</h1><p>在C语言中，语句是指一组顺序执行的代码，用于完成特定的操作或控制程序的执行流程。C语言中的语句类型多种多样，主要包括以下几种：</p>
+<ul>
+<li>表达式语句<br>表达式语句是包含表达式的语句，通常以分号结尾，用于计算表达式并丢弃结果。例如:</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c">x=<span class="hljs-number">3</span>; <span class="hljs-comment">//赋值表达式语句</span><br>i++； <span class="hljs-comment">//自家运算表达式语句</span><br>a=<span class="hljs-number">1</span>,b=<span class="hljs-number">2</span>; <span class="hljs-comment">//逗号表达式语句</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><p>控制语句</p>
+<ul>
+<li>包括选择语句（if、switch）、</li>
+<li>循环语句（while、do-while、for）</li>
+<li>跳转语句（goto、break、continue、return）。</li>
+</ul>
+</li>
+<li><p>复合语句：由多个语句组成的语句块，通常用花括号 {} 包括起来。</p>
+</li>
+<li><p>空语句：仅包含一个分号的语句，可用于作为占位符或空循环语句的控制语句。</p>
+</li>
+</ul>
+<h1 id="输入和输出"><a href="#输入和输出" class="headerlink" title="输入和输出"></a>输入和输出</h1><h2 id="字符输入输出"><a href="#字符输入输出" class="headerlink" title="字符输入输出"></a>字符输入输出</h2><ul>
+<li>字符输入函数 <code>getchar()</code>：它的简单意思就是从键盘读入一个字符，然后输出到屏幕。一次只能读取一个字符，若要获取多个字符，必须使用多个<code>getchar()</code>函数。</li>
+<li>字符输出函数<code>putchar()</code>:它主要用于在屏幕上输出单个字符。同样一次只能输出一个字符。</li>
+<li>字符串输入函数<code>gets()</code>: 函数用于从标准输入设备读取一行字符串</li>
+<li>字符串输出函数<code>puts()</code>: 函数用于将一个字符串输出到标准输出设备</li>
+</ul>
+<h2 id="标准格式的输入输出"><a href="#标准格式的输入输出" class="headerlink" title="标准格式的输入输出"></a>标准格式的输入输出</h2><p><mark>标准输入&#x2F;输出函数在使用前必须包含有头文件”stdio.h”。</mark></p>
+<ul>
+<li>标准格式输入函数<code>scanf()</code>: 用于从标准输入设备（通常是键盘）读取格式化的输入。</li>
+<li>标准格式输出函数<code>scanf()</code>: 用于将格式化的数据输出到标准输出设备（通常是屏幕）。<br>两者语法如下：</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span>      <span class="hljs-comment">// 执行 printf() scanf() 函数需要该库</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d%f&quot;</span>, &amp;a, &amp;b); <span class="hljs-comment">//输入一个十进制数和一个浮点数</span><br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d%f&quot;</span>, a, b);  <span class="hljs-comment">//输出所输入的十进制数和浮点数</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="格式控制字符"><a href="#格式控制字符" class="headerlink" title="格式控制字符"></a>格式控制字符</h2><p>C语言中常用的格式化输出符号包括：<code>%d（整型）、%c（字符型）、%s（字符串型）、%f（单精度浮点型）、%lf（双精度浮点型）</code>等。这些符号用于指定输出类型，以便将不同类型的数据按照指定的格式输出。</p>
+<table>
+<thead>
+<tr>
+<th>格式控制符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%c</td>
+<td>一个单一的字符</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>%d或%i</td>
+<td>有符号十进制整数 (%u无符号)</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>浮点数(小数形式)(<code>&quot;%.2f&quot;</code>保留两位小数)</td>
+</tr>
+<tr>
+<td>%x或%X</td>
+<td>十六进制整数</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>八进制整数</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>指针地址</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>输出百分号</td>
+</tr>
+</tbody></table>
+
                 
               </div>
             
